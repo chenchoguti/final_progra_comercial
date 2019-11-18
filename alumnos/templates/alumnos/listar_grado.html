@@ -1,0 +1,12 @@
+{% extends 'alumnos/base.html' %}			
+	{% block content %}		
+			{% for pub in pubs %}
+	            <div class="post">
+	  
+	                <h1><a href="#">{{ pub.nombre }}</a></h1>
+	                <p>{{ pub.descripcion }}</p>
+	                
+	            </div>
+	    	
+        	{% endfor %}
+        {% endblock %}
